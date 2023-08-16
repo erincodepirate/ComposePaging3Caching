@@ -11,6 +11,7 @@ import com.plcoding.composepaging3caching.data.mappers.toBeerEntity
 import okio.IOException
 import retrofit2.HttpException
 
+@OptIn(ExperimentalPagingApi::class)
 class BeerRemoteMediator (
     private val beerDb: BeerDatabase,
     private val beerApi: BeerApi
